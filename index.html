@@ -185,7 +185,7 @@
             template: `
                 <div class="tile is-ancestor">
                     <div class="tile is-parent is-3" v-for="video in vrow">
-                        <article class="tile is-child box" v-on:click="$emit('open-video',video.id)">
+                        <article class="tile is-child box" v-on:click="$emit('open-video',video.id)" style="cursor: pointer">
                             <figure class="image is-4by3">
                                 <img v-bind:src=video.thumbnail>
                             </figure>
